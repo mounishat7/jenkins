@@ -7,7 +7,7 @@ pipeline {
                echo "Build"
            }
        }
-        stage('build && SonarQube analysis') {
+        stage('SonarQube analysis') {
             agent any 
             steps {
                 withSonarQubeEnv('maven') {
